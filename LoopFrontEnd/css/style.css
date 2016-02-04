@@ -1,0 +1,65 @@
+
+/* Slideshow metrics */
+.slideshow {
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  position: fixed;
+}
+
+/* ... */
+.slides img {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Super slide */
+.with-overlay {
+  position: relative;
+}
+
+.with-overlay img,
+.with-overlay .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+
+.with-overlay .overlay {
+  z-index: 2;
+  background: rgba(0, 10, 60, 0.75);
+
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), 0 0 4px rgba(0, 0, 0, 0.3);
+
+  text-align: center;
+  line-height: 200px;
+}
+
+.with-overlay .in {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 20px;
+
+  /* Compensation for dots */
+  padding-bottom: 15px;
+
+  line-height: 1.4em;
+}
+
+#exit{
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  z-index: 10000;
+  font-family: 'PT Sans';
+  margin-top: 10px;
+  margin-left: 10px;
+  color: white;
+  text-decoration: none;
+}
+

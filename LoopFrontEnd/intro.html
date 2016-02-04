@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<meta charset="UTF-8" />
+    <title>Swipeshow: the unassuming touch-enabled slideshow JavaScript library</title>
+
+    <link href="./css/jquery.swipeshow.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <link href="./css/slideshow-theme.css" rel="stylesheet" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="./js/jquery.swipeshow.min.js"></script>
+    <meta name="viewport" content="width=device-width">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+
+
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Include the compiled Ratchet JS -->
+    <script src="./js/ratchet.js"></script>
+
+  </head>
+  <body>
+
+
+    <div class="content">
+
+    <a id="exit" href="./index.html" data-ignore="push">X</a>
+
+  <div class="slideshow swipeshow">     
+    <ul class="slides">
+      <li class="slide">
+        <img src="./img/1.png" alt="" />
+      </li>
+      <li class="slide">
+        <img src="./img/2.png" alt="" />
+      </li>
+      <li class="slide">
+        <img src="./img/3.png" alt="" />
+        <div class="overlay">
+          <div class="in">
+      
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class='dots'></div>
+
+
+
+  <script>
+    (function($) {
+      $(".version").text($.swipeshow.version);
+      $(".slideshow").swipeshow({ mouse: true,  autostart: false, interval: 100000});
+    })(jQuery);
+  </script>
+</div>
+        </div>
+
+  </body>
+</html>

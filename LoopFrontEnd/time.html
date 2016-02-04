@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="./css/ratchet.css" rel="stylesheet">
+
+    <!-- Include the compiled Ratchet JS -->
+    <script src="./js/ratchet.js"></script>
+     <script src="./js/settings.js"></script>
+     <script src="./js/time.js"></script>
+  </head>
+  <body onload="postPreview();">
+
+    <!-- Make sure all your bars are the first things in your <body> -->
+
+
+
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+
+<header class="bar bar-nav">
+
+    <a href="./index.html" data-ignore="push">
+<div id="button">
+  <span class="icon icon-left" onclick="clearPostCache();">Cancel</span></div>
+</a>
+
+
+
+   <a href="./post.html"  data-ignore="push">
+<div id="iconedit" >Edit</div>
+</a>
+
+
+  <div id="logo">
+  </div>
+</header>
+
+    <div class="content">
+    </br>
+
+      
+<p>Planning to go:</p>
+<form>
+<select  id="timeForm" class="multiple">
+<option value="0">Now</option>
+<option value="1">Within the hour</option>
+<option value="5">2-5 hours</option>
+<option value="10">5+ hours</option>
+</select>
+</br>
+</form>
+
+<p>Post Preview:</p>
+<div id="post" class="post">
+   <div id="posttitle1" class="posttitle"></div>
+    <div id="posttext1" class="posttext"></div>
+          <div id="pic1" class="pic"></div>
+      </div>
+
+
+    
+
+  <button class="btn btn-positive btn-block"  onclick="postToDataBase()">Let's go</button>
+
+    </div>
+
+
+
+
+    </div>
+     
+    </div>
+
+  </body>
+</html>

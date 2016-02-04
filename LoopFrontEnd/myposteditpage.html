@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="./css/ratchet.css" rel="stylesheet">
+
+    <!-- Include the compiled Ratchet JS -->
+    <script src="./js/ratchet.js"></script>
+    <script src="./js/settings.js"></script>
+    <script src="./js/myposteditpage.js"></script>
+
+  </head>
+  <body onload="main()">
+
+
+    <!-- Make sure all your bars are the first things in your <body> -->
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+<header class="bar bar-nav">
+    <a href="./myposts.html" data-ignore="push">
+
+<div id="button">
+  <span class="icon icon-left">Back</span>
+</div>
+
+</a>
+  <div id="logo">
+  </div>
+</header>
+    <div class="content">
+
+    </br>
+      
+  <form>
+  <input id="myposttitle" autofocus type="search" placeholder="Activity">
+</form>
+
+
+  <textarea id="myposttext"  rows="8" placeholder="Now tell us more..."></textarea>
+
+  <p>Planning to go:</p>
+<form>
+<select  id="timeForm" class="multiple">
+<option value="0">Now</option>
+<option value="1">Within the hour</option>
+<option value="5">2-5 hours</option>
+<option value="10">5+ hours</option>
+</select>
+</br>
+</form>
+ 
+
+
+</form>
+  <button class="btn btn-positive btn-block" onclick="postEditToDataBase();">Finish Edit</button>
+
+     
+    </div>
+
+  </body>
+</html>

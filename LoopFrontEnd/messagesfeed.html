@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Loop</title>
+
+
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="./css/ratchet.css" rel="stylesheet">
+
+    <!-- Include the compiled Ratchet JS -->
+    <script src="./js/ratchet.js"></script>
+    <script src=" http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="./js/settings.js"></script>
+      
+            <script src="./js/messagesfeed.js"></script>
+  </head>
+
+
+    <!-- Make sure all your bars are the first things in your <body> -->
+
+   <nav class="bar bar-tab">
+   <input id="sendbox" type="text"></input>
+    <div id="sendbutton" onclick="sendMessage();">
+      <div id="sendbuttontext">Send</div>
+    </div>
+</nav>
+
+
+
+  <header class="bar bar-nav">
+   <a href="./messages.html" data-ignore="push">
+    <div id="button">
+  <span class="icon icon-left">Back</span>
+</a>
+
+
+
+</div>
+
+  <div id="logo">
+  </div>
+</header>
+
+
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+
+    <div class="content">
+<body onload="main();">
+  <div id="messagefeed">
+</div>    
+
+    </div>
+
+  </body>
+</html>

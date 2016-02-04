@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+  <title>Loop</title>
+
+
+
+  <!-- Sets initial viewport load and disables zooming  -->
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+  <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <!-- Include the compiled Ratchet CSS -->
+  <link href="./css/ratchet.css" rel="stylesheet">
+
+  <!-- Include the compiled Ratchet JS -->
+      <script src="./js/settings.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="./js/ratchet.js"></script>
+</head>
+<body>
+
+  <!-- Make sure all your bars are the first things in your <body> -->
+
+  <nav class="bar bar-tab">
+    <a class="tab-item active" href="./index.html" data-ignore="push">
+      <span class="icon icon-home"></span>
+      <span class="tab-label">Home</span>
+    </a>
+    <a class="tab-item" href="./post.html" data-ignore="push">
+     <span class="icon icon-edit"></span>
+     <span class="tab-label">Create</span>
+   </a>
+   <a class="tab-item" href="./profile.html" data-ignore="push">
+    <span class="icon icon-person"></span>
+    <span class="tab-label">Profile</span>
+    <badge id="profileBadge"></badge>
+    <script>if(window.localStorage.getItem("messageCount")>0){document.getElementById("profileBadge").innerHTML =  window.localStorage.getItem("messageCount")};</script>
+  </a>
+
+  <a class="tab-item" href="./settings.html" data-ignore="push">
+    <span class="icon icon-gear"></span>
+    <span class="tab-label">Settings</span>
+  </a>
+
+  <!--  <a class="tab-item" href="./logintest.html" data-ignore="push">
+    <span class="icon icon-gear"></span>
+    <span class="tab-label">Login</span>
+  </a> -->
+</nav>
+
+
+<header class="bar bar-nav">
+  <div id="logo">
+  </div>
+</header>
+
+
+
+<!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+
+<div class="content">
+  <body onload="main();">
+    <div id="topbuttons">
+    </br>
+<button class="btntopactive" id="buttonnearme" onclick="nearMe();">Near me</button>
+<button  id="buttonsoon" class="btntop" onclick="endTime();">Soon</button>
+<button  id="buttonnew" class="btntop" onclick="newPost();">New</button>
+</div>
+  </form>
+<div id="posts"></div>
+  
+
+  <a id = "gobutton" href="./post.html" data-ignore="push">
+    <button  class="btn btn-positive btn-block">Create an Activity</button>
+  </a>
+
+</div>
+
+</body>
+</html>

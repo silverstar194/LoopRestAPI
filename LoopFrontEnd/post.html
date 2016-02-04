@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link href="./css/ratchet.css" rel="stylesheet">
+
+    <!-- Include the compiled Ratchet JS -->
+    <script src="./js/ratchet.js"></script>
+    <script src="./js/settings.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false&amp;libraries=places"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="./js/jquery.geocomplete.js"></script>
+    <script src="./js/post.js"></script>
+  </head>
+  <body onload="loadEdit()">
+
+
+    <!-- Make sure all your bars are the first things in your <body> -->
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+<header class="bar bar-nav">
+    <a href="./index.html" data-ignore="push">
+
+<div id="button">
+  <span class="icon icon-left">Back</span>
+</div>
+
+</a>
+  <div id="logo">
+  </div>
+</header>
+    <div class="content">
+
+    </br>
+      
+  <form>
+
+  <input id="posttitleinput" autofocus type="search" placeholder="Activity">
+    <textarea id="posttext"  rows="8" placeholder="Now tell us more about what you're doing..."></textarea>
+</form>
+
+    <div id="locationtitle">Location:</div>
+      <input id="geocomplete" type="text" placeholder="Type Address or Drag Pin" />
+         
+    <div class="map_canvas"></div>
+
+  <button class="btn btn-positive btn-block" onclick="getTextandTitle()">Let's go</button>
+
+        </div>
+  </body>
+</html>

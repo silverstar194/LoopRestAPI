@@ -1,0 +1,57 @@
+/*color main: #00b78b
+  color 2nd: #49E20E
+  color background: #fcfbe3
+  color gray (mostly buttons): #777
+
+
+*/
+
+
+body{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+}
+
+#email{
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-top: 100px;
+    text-align: justify;
+}
+
+#logo{
+    background: url(../img/logo.png);
+}
+
+#buttonbox{
+    margin: 0px auto;
+    margin-top: 50%;
+    margin-left: 50px;
+}
+
+#buttonbox button{
+    width: 70%;
+    height: 100px;
+    box-shadow: 3px 3px 0px #888888;
+    border-radius: 7px 7px 7px 7px;
+    cursor:pointer;
+}
+
+img{
+    float: left;
+    margin-left: 4%;
+    position: relative;
+    height: 70px;
+    width: 70px;
+}
+
+button{
+    margin: 15px;
+    border: none;
+    overflow: hidden;
+    outline: none;
+    cursor:pointer;
+    position: relative;
+    padding: 30px;
+}
