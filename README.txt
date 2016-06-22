@@ -1,5 +1,5 @@
 Loop
-www.useloop.xzy
+www.useloop.xzy (not currently hosted)
 https://github.com/silverstar194/LoopRestAPI
 
 	Loop allows you to connect with young professionals in your immediate area. Loop provides the connection that allows you to meet someone new, discuss projects and make networking connections while maintaining a relaxed and casual tone.
