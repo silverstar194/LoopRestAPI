@@ -621,6 +621,7 @@ public class Post implements Comparable{
 	/* (non-Javadoc)
 	 * @see java.lang.Comparable#compareTo(java.lang.Object)
 	 */
+	//THIS SHOULD BE REWRITTEN USING A CUSTOM COMPARE CLASSES INSTEAD OF STATIC FIELD
 	@Override
 	public int compareTo(Object o) {
 		if(o instanceof Post){

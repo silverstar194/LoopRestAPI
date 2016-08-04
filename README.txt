@@ -51,3 +51,6 @@ Problems Overcome:
 GitHub:
 Please feel free to view all source code, screenshots and database layout on github:
 https://github.com/silverstar194/LoopRestAPI
+
+
+TODO: POST SORT SHOULD BE REWRITTEN USING A CUSTOM COMPARE CLASSES INSTEAD OF STATIC FIELD
